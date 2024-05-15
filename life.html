@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* Media Queries */
+/* Card sizing */
+/* Colors */
+/* Calculations */
+/* Placeholders */
+
+body{
+  background-color: gainsboro;
+
+}
+.me{
+  width: 350px;
+}
+
+@media screen and (min-width:800px) {
+  .rap{
+    display: flex;
+  }
+  .me{
+    width: 550px;
+    height: 350px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .mes{
+    order: 99;
+    margin-left: 250px;
+  }
+}
+@media (min-width: 1000px) {
+  #timeline .demo-card:nth-child(even) .head::after, #timeline .demo-card:nth-child(odd) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before, #timeline .demo-card:nth-child(odd) .head::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #bdbdbd;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px 8px #f7f7f7;
+  }
+}
+/* Some Cool Stuff */
+.demo-card:nth-child(1) {
+  order: 1;
+}
+
+.demo-card:nth-child(2) {
+  order: 4;
+}
+
+.demo-card:nth-child(3) {
+  order: 2;
+}
+
+.demo-card:nth-child(4) {
+  order: 5;
+}
+
+.demo-card:nth-child(5) {
+  order: 3;
+}
+
+.demo-card:nth-child(6) {
+  order: 6;
+}
+
+/* Border Box */
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: Roboto;
+}
+
+#timeline {
+  padding: 100px 0;
+  background: #f7f7f7;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+#timeline h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+#timeline p.leader {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+#timeline .demo-card-wrapper {
+  position: relative;
+  margin: auto;
+}
+@media (min-width: 1000px) {
+  #timeline .demo-card-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 1170px;
+    height: 1650px;
+    margin: 0 auto;
+  }
+}
+#timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+@media (min-width: 1000px) {
+  #timeline .demo-card-wrapper::after {
+    border-left: 1px solid #bdbdbd;
+  }
+}
+#timeline .demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 94%;
+  z-index: 2;
+}
+@media (min-width: 480px) {
+  #timeline .demo-card {
+    max-width: 60%;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+@media (min-width: 720px) {
+  #timeline .demo-card {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  #timeline .demo-card {
+    max-width: 450px;
+    height: 400px;
+    margin: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  #timeline .demo-card:nth-child(odd) {
+    margin-right: 45px;
+  }
+  #timeline .demo-card:nth-child(odd) .head::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+  #timeline .demo-card:nth-child(odd) .head::before {
+    left: 491.5px;
+  }
+  #timeline .demo-card:nth-child(even) {
+    margin-left: 45px;
+  }
+  #timeline .demo-card:nth-child(even) .head::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+  }
+  #timeline .demo-card:nth-child(even) .head::before {
+    right: 489.5px;
+  }
+  #timeline .demo-card:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+#timeline .demo-card .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+#timeline .demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+#timeline .demo-card .head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 {
+    font-size: 165%;
+    line-height: 1.2rem;
+  }
+}
+#timeline .demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 span {
+    font-size: 0.8rem;
+  }
+}
+#timeline .demo-card .body {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 15px;
+}
+@media (min-width: 1000px) {
+  #timeline .demo-card .body {
+    height: 315px;
+  }
+}
+#timeline .demo-card .body p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+#timeline .demo-card .body img {
+  display: block;
+  width: 100%;
+}
+#timeline .demo-card--step1 {
+  background-color: #46b8e9;
+}
+#timeline .demo-card--step1 .head::after {
+  border-color: #46b8e9;
+}
+#timeline .demo-card--step2 {
+  background-color: #3ee9d1;
+}
+#timeline .demo-card--step2 .head::after {
+  border-color: #3ee9d1;
+}
+#timeline .demo-card--step3 {
+  background-color: #ce43eb;
+}
+#timeline .demo-card--step3 .head::after {
+  border-color: #ce43eb;
+}
+#timeline .demo-card--step4 {
+  background-color: #4d92eb;
+}
+#timeline .demo-card--step4 .head::after {
+  border-color: #4d92eb;
+}
+#timeline .demo-card--step5 {
+  background-color: #46b8e9;
+}
+#timeline .demo-card--step5 .head::after {
+  border-color: #46b8e9;
+
+}
+
+#timeline .demo-card--step6 {
+  background-color: yellowgreen;
+}
+#timeline .demo-card--step6 .head::after {
+  border-color: yellowgreen;
+}
+
+#timeline .demo-card--step7 {
+  background-color: red;
+}
+#timeline .demo-card--step7 .head::after {
+  border-color: red;
+}
+
+#timeline .demo-card--step8 {
+  background-color: purple;
+}
+#timeline .demo-card--step8 .head::after {
+  border-color: purple;
+}
+
+#timeline .demo-card--step9 {
+  background-color: paleturquoise;
+}
+#timeline .demo-card--step9 .head::after {
+  border-color: paleturquoise;
+}
+
+.circle_div{
+  background-image: url("i/pc_thing.jpg") ;
+  background-size: cover;
+  border-radius: 50%;
+  width:150px;
+  height:150px;
+  background-position: center;
+ 
+}
+
+.video{
+  border-radius: 100%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list_alt{
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+background-color: antiquewhite;
+padding: 10px;
+margin: 10px;
+border-width: 2px;
+border-color: black;
+border-style: solid;
+}
+
+.card_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.card{
+  border:4px black solid;
+  margin: 15px;
+  padding: 15px;
+  background-color: antiquewhite;
+}
+
+.card p{
+  text-align: center;
+}
+
+.list_txt{
+  line-height: 150px;
+  font-family: raleway;
+  color: black;
+  font-size: 24px;
+}
+
+.body p{
+  text-align: center;
+}
+
+.card p{
+  font-family: poppins;
+  color: black;
+  font-size: 14px;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+    <h1> Life Of Kayden Block </h1>
+<!--Put images of this below-->
+<div class="rap">
+  <div class="miny_rap">
+<div>
+    <h3>10 things about me</h3>
+</div>
+<div class="list">
+    <p class="list_txt">• gamer</p> 
+    <div class="circle_div"></div>
+</div>
+<div class="list_alt">
+    <P class="list_txt">• idk?????</P> 
+    <div class="circle_div" style="background-image: url(i/me_japan.jpg);"></div>
+</div>
+<div class="list">
+    <p class="list_txt">• Basketball</p>  
+   <div class="video">
+    <video width="250" height="150" autoplay muted loop controls>
+      <source src="i/clip.mp4" type="video/mp4"> 
+    </video>
+  </div> 
+</div>
+<div class="list_alt">
+    <p class="list_txt">• Golfer</p> 
+    <div class="circle_div" style="background-image: url(i/Screenshot_20240507-104644~2.png);"></div>
+</div>
+<div class="list">
+    <p class="list_txt">• Coder</p>
+    <div class="circle_div" 
+    style="background-image: url(i/weird_guy.jpg);"></div>
+</div>
+<div class="list_alt">
+    <p class="list_txt" >• Pc Builder</p> 
+     <div class="circle_div" style="background-image: url(i/pc.jpg);"></div>
+</div>
+<div class="list">
+    <p class="list_txt">• Photographer</p> 
+    <div class="circle_div" style="background-image: url(i/water_fall.jpg);"></div>
+</div>
+<div class="list_alt">
+    <p class="list_txt">• animal lover</p> 
+    <div class="circle_div" style="background-image: url(i/logan.jpg);"></div>
+</div>
+<div class="list">
+    <p class="list_txt">• Pilot</p> 
+    <div class="circle_div" style="background-image: url(i//pilot.jpg);"></div>
+</div>
+<div class="list_alt">
+    <P class="list_txt">• Foodie</P> 
+    <div class="circle_div" style="background-image: url(i/pancacke.jpg);"></div>
+</div>
+</div>
+
+
+
+<div class="container">
+  <div class="mes">
+  <h2>Me</h2>
+  <img src="i/me.jpg" class="me">
+</div>
+<!--Put image above-->
+<h2> MY Favorites </h2>
+
+<div class="card">
+    <img src="i/me_japan.jpg" class="card_img">
+    <p>The land of japan is magicall place filled with communism and rich history. The food is delecitbalbe and the people are interesting and they have good taste in cartoons.</p>
+</div>
+
+<div class="card">
+    <img src="i/familly.jpg" class="card_img">
+    <p>My favirotie people are my mom and dad they have raised me and stuff.</p>
+</div>
+
+<div class="card">
+    <img src="i/molly.jpg" class="card_img">
+    <p>My dog molly is a dog and cool.</p>
+</div>
+
+<div class="card">
+    <img src="i/car.jpg" class="card_img">
+    <p> My car vroom vroom. </p>
+</div>
+
+<div class="card">
+    <img src="i/pokemon.jpg" class="card_img">
+    <p> pokemon. </p>
+</div>
+
+<div class="card">
+    <img src="i/pc_thing.jpg" class="card_img">
+    <p> pc go brrr. </p>
+</div>
+</div>
+</div>
+<!-- steal timeline -_- -->
+<section id=timeline>
+  <h1> The Timeline</h1>
+  <p class="leader"></p>
+  <div class="demo-card-wrapper">
+    <div class="demo-card demo-card--step1">
+      <div class="head">
+        <div class="number-box">
+          <span>2008</span>
+        </div>
+        <h2><span class="small"></span> Early life</h2>
+      </div>
+      <div class="body">
+        <p> On September 30th 2008 in naples florida I was born.</p>
+        <img src="i/baby.JPG" alt="Birth">
+      </div>
+    </div>
+
+    <div class="demo-card demo-card--step2">
+      <div class="head">
+        <div class="number-box">
+          <span>2011</span>
+        </div>
+        <h2><span class="small"></span> my first club </h2>
+      </div>
+      <div class="body">
+        <p> My and my dad doing cool things </p>
+        <img src="i/gang.JPG" alt="thing">
+      </div>
+    </div>
+
+    <div class="demo-card demo-card--step3">
+      <div class="head">
+        <div class="number-box">
+          <span>2012</span>
+        </div>
+        <h2><span class="small"></span> cool hair</h2>
+      </div>
+      <div class="body">
+        <p> I had very cool hair </p>
+        <img src="i/hair.JPG" alt="hair">
+      </div>
+    </div>
+    <div class="demo-card demo-card--step4">
+      <div class="head">
+        <div class="number-box">
+          <span>2014</span>
+        </div>
+        <h2><span class="small"></span> My famillys first house</h2>
+      </div>
+      <div class="body">
+        <p> We moved from naples to cape coral</p>
+        <img src="i/house.png" alt="my cape coral house">
+      </div>
+    </div>
+    <div class="demo-card demo-card--step5">
+      <div class="head">
+        <div class="number-box">
+          <span>2016</span>
+        </div>
+        <h2><span class="small"></span> my first time on sanibel</h2>
+      </div>
+      <div class="body">
+        <p> My dad has been working on sanibel for 10 years we decided to go to the beach to check out the city.</p>
+        <img src="i/2016.JPG" alt="beach">
+      </div>
+    </div>
+    <div class="demo-card demo-card--step6">
+      <div class="head">
+        <div class="number-box">
+          <span>2020</span>
+        </div>
+        <h2><span class="small"></span> Sanibel</h2>
+      </div>
+      <div class="body">
+        <p> MY parents start a company and we move to Sanibel</p>
+        <img src="i/sanibel.png" alt="Sanibel house">
+      </div>
+    </div>
+
+    <div class="demo-card demo-card--step7">
+      <div class="head">
+        <div class="number-box">
+          <span>2023</span>
+        </div>
+        <h2><span class="small"></span> Japan</h2>
+      </div>
+      <div class="body">
+       <p>I wen to japan during spring break it was cool.</p>
+        <img src="i/me_japan.jpg" alt="japan">
+      </div>
+    </div>
+
+    <div class="demo-card demo-card--step8">
+      <div class="head">
+        <div class="number-box">
+          <span>2024</span>
+        </div>
+        <h2><span class="small"></span> moved</h2>
+      </div>
+      <div class="body">
+        <p>MY parents purchased there dream home on sanibel</p>
+        <img src="i/c_house.png" alt="Graphic">
+      </div>
+    </div>
+
+    <div class="demo-card demo-card--step9">
+      <div class="head">
+        <div class="number-box">
+          <span>2024</span>
+        </div>
+        <h2><span class="small"></span> Cburry</h2>
+      </div>
+      <div class="body">
+        <p> I moved to a new school</p>
+        <img src="i/weird_guy.jpg" alt="Graphic">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</body>
+
+
+
+
+</html>
